@@ -1,0 +1,29 @@
+* {
+   text-align: center;
+}
+h1 {
+    margin: 10px;
+}
+fieldset {
+    border: 2px solid black;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.quadro {
+    font-size: large;
+}
+#p1 {
+    margin-left: 10px;
+}
+form {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+legend {
+    text-align: left;
+    font-weight: bold;
+    font-size: larger;
+}
+#medf {
+    margin-bottom: 20px;
+}

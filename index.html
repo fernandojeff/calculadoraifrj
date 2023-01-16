@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="principal.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de notas</title>
+</head>
+<body>
+    <h1>Calculadora de notas</h1>
+    <p id="p1">Essa calculadora usa o modelo de notas do IFRJ - Campus Níteroi</p>
+    <hr>
+    <br>
+    <fieldset>
+        <legend>Primeiro Bimestre</legend>
+        <form method="post" name="media1">
+            <label for="nota1">Nota da <b>primeira</b> avaliação:</label>
+                <input type="text" name="v1"> <br>
+            <label for="nota2">Nota da <b>segunda</b> avaliação:</label>
+                <input type="text" name="v2"> <br> <br>
+            <input type="submit" value="Calcular média >>" onclick="return med1()"> <br> <br>
+            <input type="text" name="M">
+        </form>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Segundo Bimestre</legend>
+        <form action="post" name="media2">
+            <label for="nota1">Nota da <b>primeira</b> avaliação:</label> 
+                <input type="text" name="v1"> <br>
+            <label for="nota2">Nota da <b>segunda</b> avaliação:</label> 
+                <input type="text" name="v2"> <br><br>
+            <input type="submit" value="Calcular média >>" onclick="return med2()"> <br><br>
+            <input type="text" name="M2">
+        </form>
+    </fieldset>
+    <br>
+    <fieldset id="medf">
+        <legend>Média final e situação</legend>
+        <form action="post" name="final">
+            <input type="submit" value="Calcular média final" onclick="return finalmed()"> <br> <br>
+            <label for="medfinal">Média final:</label> 
+            <input type="text" name="medfinal"> <br>
+            <label for="situacao">Situação:</label>
+            <input type="text" name="situacao">
+        </form>
+    </fieldset>
+    <fieldset>
+        <h2>Calculo da recuperação</h2>
+        <br>
+        <form action="post" name="rec">
+            <label for="notaseg">Nota do segundo bimestre:</label>
+                <input type="number" name="nt2">
+            <br>
+            <label for="notatrec">Nota da recuperação:</label>
+                <input type="number" name="ntrec">
+            <br> <br>
+            <input type="submit" value="Calcular nota final" onclick="return calcrec()"> 
+            <br>
+            <input type="number" name="graufinal">
+        </form>
+    </fieldset>
+</body>
+</html>
